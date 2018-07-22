@@ -38,7 +38,7 @@ class App extends Component {
           <div className="App">
             <IntroCard title="Intro" descrip={intro}></IntroCard>
             <ProjectCard title="Belacam" descrip="I Developed and co-founded a P2P monetized social media site currently with over 10,000 users. Users upload high quality image content and 'like' photos by donating the Belacoin cryptocurrency. Thousands of dollars have been sent between users to date." link="https://www.belacam.com/b/discover"><img className="image" src={require("./belacam.png")} /></ProjectCard>
-            <ProjectCard title="Portal.js" descrip="I Developed a 2D platform game developed in ES6 JavaScript where the player destroys and avoids being hit by heat-seeking missiles. Use the Arrow Keys to move and the Mouse to shoot! You can play the full version by clicking the link below." link="https://raghavapamula.github.io/portal.js/"><Portal /></ProjectCard>
+            <ProjectCard title="Portal.js" descrip="I Developed a 2D platform game developed in ES6 JavaScript where the player destroys and avoids being hit by heat-seeking missiles. Use the Arrow Keys to move and the Mouse to shoot! You can play the full version by clicking the link below. (Warning! Game performance is horrible for mobile browsers)" link="https://raghavapamula.github.io/portal.js/"><Portal /></ProjectCard>
             <ProjectCard title="ThoughtScape" descrip="Image Uploading Social Media Platform with a Django-based backend. Handles authorization by hashing and salting passwords" link="https://shrouded-harbor-59105.herokuapp.com/"></ProjectCard>
           </div>
         </div>
