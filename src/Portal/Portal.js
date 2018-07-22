@@ -7,6 +7,7 @@ import paper from 'paper'
 
 export default class Portal extends Component {
   componentDidMount() {
+    alert("DSF");
     var canvas = document.getElementById("canvas");
     window.addEventListener("resize", () => this.handleResize());
     paper.setup(canvas);
