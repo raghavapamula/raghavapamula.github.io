@@ -42,11 +42,10 @@ export default class Portal extends Component {
     var rect = canvas.parentNode.getBoundingClientRect();
 
     this.view.viewSize.width = rect.width - 50;
-    if(window.innerHeight >= 375) {
+    if(window.innerHeight >= 667) {
       this.view.viewSize.height = window.innerHeight * 0.33;
     } else{
-      alert("small");
-      this.view.viewSize.height = window.innerHeight * 9;
+      this.view.viewSize.height = window.innerHeight * 0.25;
     }
   }
 
