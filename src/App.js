@@ -4,7 +4,7 @@ import './App.css';
 import styled from 'styled-components';
 import Portal from './Portal/Portal.js';
 
-let intro = "Hi there! My name is Raghava, and I am a student of Computer Science and Commerce at the University of Virginia. I enjoy learning and applying revolutionary technologies such as cryptocurrencies to make powerful tools for people to use.\n My main programming languages are Python, JavaScript, and C++. My most succesful project, Belacam, has been proven to be Scalable to over 10,000 users with a peak load of 2500 users. \n Last summer, I worked as a software engineering intern at the Home Depot and worked collaboratively in a team setting to develop a Price Visibiliy Tool for internal users with React and Node.js. If you would like to hire me or get in contact with me, the best way would be through email at rp2zd@virginia.edu.";
+let intro = "Hi there! My name is Raghava, and I am a student of Computer Science and Commerce at the University of Virginia. I enjoy learning and applying revolutionary technologies such as cryptocurrencies to make powerful tools for people to use.\n My main programming languages are Python, JavaScript, and C++. My most succesful project, Belacam, has been proven to be Scalable to over 10,000 users with a peak load of 2500 users. \n Last summer, I worked as a software engineering intern at the Home Depot. There, I worked collaboratively in a team setting to develop a Price Visibiliy Tool for internal users with React and Node.js. If you would like to hire me or get in contact with me, the best way would be through email at rp2zd@virginia.edu.";
 const VertCenter = styled.div`
     margin-top: 50%;
     margin-bottom: 50%;
