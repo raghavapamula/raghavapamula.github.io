@@ -7,7 +7,6 @@ import paper from 'paper'
 
 export default class Portal extends Component {
   componentDidMount() {
-    alert("DSF");
     var canvas = document.getElementById("canvas");
     window.addEventListener("resize", () => this.handleResize());
     paper.setup(canvas);
@@ -47,7 +46,7 @@ export default class Portal extends Component {
       this.view.viewSize.height = window.innerHeight * 0.33;
     } else{
       alert("small");
-      this.view.viewSize.height = window.innerHeight * 0.2;
+      this.view.viewSize.height = window.innerHeight * 9;
     }
   }
 
