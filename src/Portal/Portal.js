@@ -45,6 +45,7 @@ export default class Portal extends Component {
     if(window.innerHeight >= 375) {
       this.view.viewSize.height = window.innerHeight * 0.33;
     } else{
+      alert("small");
       this.view.viewSize.height = window.innerHeight * 0.2;
     }
   }
