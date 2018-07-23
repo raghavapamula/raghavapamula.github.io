@@ -39,8 +39,8 @@ export default class Card extends Component {
 const SocialIcons = () => {
     return(
         <div className = "social">
-            <div><i className="fab fa-github-square fa-2x column"></i></div>
-            <div><i className="fab fa-linkedin fa-2x column"></i></div>
+            <div><a href="https://github.com/raghavapamula/"><i className="fab fa-github-square fa-2x column"></i></a></div>
+            <div><a href="https://www.linkedin.com/in/raghava-pamula/"><i className="fab fa-linkedin fa-2x column"></i></a></div>
             <div><i className="fa fa-envelope fa-2x column"></i></div>
             <div><i className="fas fa-file-pdf fa-2x column"></i></div>
         </div>
