@@ -22,7 +22,8 @@ class App extends Component {
     for(let i=0; i < images.length; i++) {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
-      img.width = rect.width - 75;
+      const width = (window.innerWidth > 900) ? (rect.width - 75) : (rect.width - 350);
+      img.width = width;
       img.height = 'auto';
     }
   }
@@ -33,7 +34,8 @@ class App extends Component {
     for(let i=0; i < images.length; i++) {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
-      img.style.width = rect.width - 75 + "px";
+      const width = (window.innerWidth > 900) ? (rect.width - 75) : (rect.width - 350);
+      img.style.width = width + "px";
       img.style.height = 'auto';
     }
   }
