@@ -33,8 +33,10 @@ body {
   width: 25%;
   position: fixed;
   background-color: #e587a3;
-  /*background-image: url(wcloud.svg); causes a cluttered feel*/
+  background-image: url(wcloud.svg);
+  background-size: 270% 130%;
   background-position: center;
+  content: ' ';
 }
 
 .App {

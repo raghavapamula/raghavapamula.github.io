@@ -38,11 +38,10 @@ const Left = styled.div`
 
 const Content = styled.div`
     margin-top: 15px;
-    border: 1px inset black;
+    border: 1px groove black;
     border-radius: 25px;
-    border-color: #eeeeee;
+    border-color: #8f8e8eb0;
 `
-
 export default class Card extends Component {
     construtor(props) {}
     render() {
