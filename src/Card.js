@@ -41,19 +41,15 @@ const Left = styled.div`
 
 const Content = styled.div`
     @media (max-width: 600px) {
-        margin-top: 15px;
-        border: 1px groove black;
-        border-radius: 25px;
-        border-color: #8f8e8eb0;
         padding: 20px 0px 17px 0px;
     }
     @media (min-width: 601px) {
-        margin-top: 15px;
+        padding: 10px 0px 7px 0px;
+    }
+    margin-top: 15px;
         border: 1px groove black;
         border-radius: 25px;
         border-color: #8f8e8eb0;
-        padding: 10px 0px 7px 0px;
-    }
 `
 
 const BoundingBox = styled.div`
