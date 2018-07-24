@@ -41,9 +41,11 @@ const Left = styled.div`
 
 const Content = styled.div`
     @media (max-width: 600px) {
+        background-color: #eeeeeeee;
         padding: 20px 0px 17px 0px;
     }
     @media (min-width: 601px) {
+        background-color: #eeeeeeee;
         padding: 10px 0px 7px 0px;
     }
     margin-top: 15px;
