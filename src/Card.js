@@ -8,12 +8,11 @@ const Parent = styled.div`
     padding-right: 20px;
     padding-bottom: 15px;
     color: ${props => props.color};
-    margin: 15px;
+    margin: 12px;
     border-color: #443e3e7a;
     border-width: 1px;
     border-style: solid;
     height: ${props => props.height*0.7};
-    max-height: ${props => props.height};
 `;
 
 const VertCenter = styled.div`
@@ -34,19 +33,36 @@ const ProfileTitle = styled.h1`
 
 const Left = styled.div`
     text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    word-wrap: break-word
 `
 
 const Content = styled.div`
-    margin-top: 15px;
-    border: 1px groove black;
-    border-radius: 25px;
-    border-color: #8f8e8eb0;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    @media (max-width: 600px) {
+        margin-top: 15px;
+        border: 1px groove black;
+        border-radius: 25px;
+        border-color: #8f8e8eb0;
+        padding: 20px 0px 17px 0px;
+    }
+    @media (min-width: 601px) {
+        margin-top: 15px;
+        border: 1px groove black;
+        border-radius: 25px;
+        border-color: #8f8e8eb0;
+        padding: 10px 0px 7px 0px;
+    }
 `
 
 const BoundingBox = styled.div`
-    padding-bottom: 15px;
+    @media (max-width: 600px) {
+        padding: 0 10px 10px 10px;
+    }
+    @media (min-width: 601px) {
+        padding: 0 5px 15px 5px;
+    }
     border: 1px groove black;
     border-radius: 25px;
     border-color: #8f8e8eb0;

@@ -61,7 +61,7 @@ class App extends Component {
         </div>
       );
     } else {
-        document.body.style = 'background: #e587a3;';
+        document.body.style = 'background: #3d83d3;';
         return (
           <div>
             <ProfileCard />
