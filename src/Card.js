@@ -22,8 +22,26 @@ const VertCenter = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 1.5em;
+    font-size: 1.7em;
+    text-align: left;
+    border-bottom: 2px solid black;
 `;
+
+const ProfileTitle = styled.h1`
+    font-size: 1.7em;
+    border-bottom: 2px solid black;
+`;
+
+const Left = styled.div`
+    text-align: left;
+`
+
+const Content = styled.div`
+    margin-top: 15px;
+    border: 1px inset black;
+    border-radius: 25px;
+    border-color: #eeeeee;
+`
 
 export default class Card extends Component {
     construtor(props) {}
@@ -51,7 +69,7 @@ export class ProfileCard extends Component {
     render() {
         return(
             <Card profile={true}>
-                <Title>Raghava Pamula</Title>
+                <ProfileTitle>Raghava Pamula</ProfileTitle>
                 <p>CS Student at the University of Virginia</p>
                 <img src={logo} className="Profile" alt="logo" />
                 { SocialIcons() }
@@ -68,9 +86,9 @@ export class ProjectCard extends Component {
         return(
             <Card profile={false} height="2px">
                 <Title>{ this.props.title }</Title>
-                <p>{ this.props.descrip }</p>
-                <div>{this.props.children}</div>
-                <p><a href={ this.props.link }>Visit Site <i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+                <Left>{ this.props.descrip }</Left>
+                <Content>{this.props.children}</Content>
+                <p><a href={ this.props.link }>Visit Site <i className="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
             </Card>
         )
     }
@@ -81,7 +99,7 @@ export class IntroCard extends Component {
         return(
             <Card profile={false} height="2px">
                 <Title>{ this.props.title }</Title>
-                <p>{ this.props.descrip }</p>
+                <Left>{ this.props.descrip }</Left>
             </Card>
         )
     }

@@ -8,7 +8,8 @@ import paper from 'paper'
 export default class Portal extends Component {
   componentDidMount() {
     var canvas = document.getElementById("canvas");
-    window.addEventListener("resize", () => this.handleResize());
+    var handler = () => this.handleResize();
+    window.addEventListener("resize", handler);
     paper.setup(canvas);
     this.view = paper.view;
     this.handleResize();
@@ -38,14 +39,19 @@ export default class Portal extends Component {
   }
 
   handleResize() {
-    var canvas = document.getElementById("canvas");
-    var rect = canvas.parentNode.getBoundingClientRect();
+    try {
+      var canvas = document.getElementById("canvas");
+      var rect = canvas.parentNode.getBoundingClientRect();
 
-    this.view.viewSize.width = rect.width - 50;
-    if(window.innerHeight >= 667) {
-      this.view.viewSize.height = window.innerHeight * 0.5;
-    } else{
-      this.view.viewSize.height = window.innerHeight * 0.5;
+      this.view.viewSize.width = rect.width - 50;
+      if(window.innerHeight >= 667) {
+        this.view.viewSize.height = window.innerHeight * 0.5;
+      } else{
+        this.view.viewSize.height = window.innerHeight * 0.5;
+      }
+    } catch(e) {
+      //var rect = canvas.parentNode.getBoundingClientRect(); fails because canvas was removed from screen
+
     }
   }
 
