@@ -41,7 +41,17 @@ const Content = styled.div`
     border: 1px groove black;
     border-radius: 25px;
     border-color: #8f8e8eb0;
+    padding-top: 4px;
+    padding-bottom: 4px;
 `
+
+const BoundingBox = styled.div`
+    padding-bottom: 15px;
+    border: 1px groove black;
+    border-radius: 25px;
+    border-color: #8f8e8eb0;
+`
+
 export default class Card extends Component {
     construtor(props) {}
     render() {
@@ -69,8 +79,10 @@ export class ProfileCard extends Component {
         return(
             <Card profile={true}>
                 <ProfileTitle>Raghava Pamula</ProfileTitle>
+                <BoundingBox>
                 <p>CS Student at the University of Virginia</p>
-                <img src={logo} className="Profile" alt="logo" />
+                    <img src={logo} className="Profile" alt="logo" />
+                </BoundingBox>
                 { SocialIcons() }
             </Card>
         )

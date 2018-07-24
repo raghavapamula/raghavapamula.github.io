@@ -22,7 +22,7 @@ class App extends Component {
     for(let i=0; i < images.length; i++) {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
-      img.width = rect.width - 50;
+      img.width = rect.width - 75;
       img.height = 'auto';
     }
   }
@@ -33,7 +33,7 @@ class App extends Component {
     for(let i=0; i < images.length; i++) {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
-      img.style.width = rect.width - 50 + "px";
+      img.style.width = rect.width - 75 + "px";
       img.style.height = 'auto';
     }
   }
