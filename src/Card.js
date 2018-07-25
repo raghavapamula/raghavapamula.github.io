@@ -42,7 +42,7 @@ const Left = styled.div`
 const Content = styled.div`
     @media (max-width: 600px) {
         background-color: rgb(30, 30, 30, 0.97);
-        padding: 20px 5px 15px 5px;
+        padding: 5px 0px 0px 0px;
     }
     @media (min-width: 601px) {
         background-color: rgb(30, 30, 30, 0.97);
