@@ -69,3 +69,5 @@ body {
   float: left;
   width: 25%;
 }
+
+a { text-decoration: none; color:#584f4f; }

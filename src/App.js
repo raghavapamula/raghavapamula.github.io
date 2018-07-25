@@ -23,8 +23,6 @@ class App extends Component {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
       const width = (window.innerWidth > 900) ? (rect.width - 75) : (rect.width - 350);
-      img.width = width;
-      img.height = 'auto';
     }
   }
 
@@ -35,8 +33,6 @@ class App extends Component {
       var img = images[i];
       var rect = img.parentNode.getBoundingClientRect();
       const width = (window.innerWidth > 900) ? (rect.width - 75) : (rect.width - 350);
-      img.style.width = width + "px";
-      img.style.height = 'auto';
     }
   }
 
