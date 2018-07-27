@@ -82,7 +82,7 @@ const SocialIcons = () => {
             <div><a href="https://github.com/raghavapamula/" target="_blank"><i className="fab fa-github-square fa-2x column"></i></a></div>
             <div><a href="https://www.linkedin.com/in/raghava-pamula/" target="_blank"><i className="fab fa-linkedin fa-2x column"></i></a></div>
             <div><a href="mailto:rp2zd@virginia.edu" target="_blank"><i className="fa fa-envelope fa-2x column"></i></a></div>
-            <div><a href="https://drive.google.com/file/d/1fmD6zJf-YcoCYXvtxe27-3zYLitbAxmU/view" target="_blank"><i className="fas fa-file-pdf fa-2x column"></i></a></div>
+            <div><a href="https://drive.google.com/file/d/1JsbZpM6j-UP9cCX_d6v4gXdGD079BNYL/view" target="_blank"><i className="fas fa-file-pdf fa-2x column"></i></a></div>
         </div>
     )
 }
