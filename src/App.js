@@ -54,7 +54,7 @@ class App extends Component {
             <IntroCard title="Intro" descrip={intro}></IntroCard>
             <ProjectCard title="Belacam" descrip="I Developed and co-founded a P2P monetized social media site currently with over 10,000 users. Users upload high quality image content and 'like' photos by donating the Belacoin cryptocurrency. Over 20,000 dollars have been sent between users to date." link="https://www.belacam.com/b/discover"><img className="image" src={require("./demo.gif")} /></ProjectCard>
             <ProjectCard title="Portal.js" descrip="I Developed a 2D platform game developed in ES6 JavaScript where the player destroys and avoids being hit by heat-seeking missiles. Use the Arrow Keys to move and the Mouse to shoot! You can play the full version by clicking the link below." link="http://raghavapamula.com/portal.js/"><Portal /></ProjectCard>
-            <ProjectCard title="ThoughtScape" descrip="Image Uploading Social Media Platform with a Django-based backend. Handles authorization by hashing and salting passwords" link="https://github.com/raghavapamula/ThoughtScape"><img className="image" src={require("./thoughtscape.png")} /></ProjectCard>
+            <ProjectCard title="SongLyricsGenerator" descrip="Uses Markov Chains to generate original song lyrics in the style of an existing artist" link="https://raghavapamula.com/SongLyricsGenerator"><img className="image" src={require("./songlyricsgenerator.png")} /></ProjectCard>
           </div>
         </div>
       );
